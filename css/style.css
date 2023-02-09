@@ -1,9 +1,9 @@
 header{
-    background-color: #77623F;
+    background-color:aquamarine;
     padding: 5%;
     
 }
-aside {background-color: #beb1a53e;
+aside {background-color: rgb(90, 201, 201);
     
 }
 
@@ -11,6 +11,7 @@ header>h1{
     font-family: 'Tangerine',cursive;
     font-size: 5rem;
     text-align: center;
+    background-color: aquamarine;
 }
     
 header>h2{
