@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        fieldset{
+            background-color:rgb(15, 18, 159);
+            width:150px;
+            padding:20px;
+    color: aliceblue;
+        
+        }
+        form input:invalid{
+            background-color: indigo;
+            border:none;
+            outline:2px solid ivory;
+        }
+        form ul{
+            list-style-type: none;
+            width:35rem;
+        }
+        form ul>li{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        form ul>li>input{S
+            justify-self:left;
+
+        }
+        body{
+            background-image: url("https://www.shutterstock.com/image-photo/journey-on-vacation-travel-concept-260nw-1912567177.jpg");
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    form{
+margin-left: 400px;
+margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Make your tour amazing with us</h1>
+
+    <form action="action.html"method="get"id=form1">
+  <fieldset>
+    <legend>Registration Info</legend>
+    <ul>
+        <li><label for="Name">Name</label>
+         <input id="Name"  name="Name" type="text"></li>
+<li><label for="email">Email:</label>
+<input id="Email" name="Email"type="email"></li>
+<li><label for "phonenumber">PhoneNumber</label>
+<input id="PhoneNumber" name="phonenumber"type="tel"</li><br><br>
+<li><button type="submit">Submit</button></li>
+
+</ul>
+  </fieldset>
+  <label for="contactPreference">Please contact me</label>
+  <select name="contactPreference" id="contactPreference">
+  <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </label>
+   </form>
+    
+</body>
+</html>
