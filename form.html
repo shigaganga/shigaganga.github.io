@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        fieldset{
+            background-color: rgb(0 182 255 / 91%);
+            width:150px;
+            padding:20px;
+    color: black;
+        }
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: 100;
+            padding: auto;
+            color: black;
+            background-color:white;
+            
+        }
+        h1,h2{
+            color: rgba(7, 7, 96, 0.944);
+        }
+
+        form input:invalid{
+            background-color: indigo;
+            border:none;
+            outline:2px solid ivory;
+        }
+        form ul{
+            list-style-type: none;
+            width:35rem;
+        }
+        form ul>li{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        form ul>li>input{
+            justify-self:left;
+        }
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/top-view-no-vacation-concept-with-plane_23-2148580921.jpg?w=2000");
+            background-size: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    form{
+margin-left: 70px;
+margin-top: 110px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Make Your Tour Amazing With Us</h1><br>
+    <h1>REGISTER NOW...</h1>
+
+    <form action="action.html"method="get"id=form1">
+  <fieldset>
+    <legend>Registration Info</legend>
+    <ul>
+        <li><label for="Name">Name</label>
+         <input id="Name"  name="Name" type="text"></li>
+<li><label for="email">Email:</label>
+<input id="Email" name="Email"type="email"></li>
+<li><label for "phonenumber">PhoneNumber</label>
+<input id="PhoneNumber" name="phonenumber"type="tel"</li><br><br>
+<li><button type="submit">Submit</button></li>
+
+</ul>
+  </fieldset>
+  <label for="contactPreference">Please contact us</label>
+  <select name="contactPreference" id="contactPreference">
+  <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </label>
+   </form>
+    
+</body>
+</html>
