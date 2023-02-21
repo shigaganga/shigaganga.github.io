@@ -1,0 +1,40 @@
+*{box-sizing: border-box;}
+ul,ol,dd{margin:0;padding: 0;}
+/*mobile phone settings--<320px*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+li,nav li a,nav li a:visted{
+    width: 100%;
+    display: inline-block;
+    background-color: aquamarine;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    padding: 2em;
+}
+li{
+    border:inset #7AAADD 2px;
+    margin-bottom: 1.5em;
+}
+/*tablet size*/
+@media all and(min-width:768px){
+    ul{
+        flex-direction: row;
+    }
+}
+/*desktop size*/
+@media all and(min-width:1200px){
+    ul{
+        justify-content: center;
+    }
+    nav li a,nav li a:visited{
+        display: inline;
+        background-color: inherit;
+        border: none;
+
+    }
+}

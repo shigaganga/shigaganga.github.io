@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Exercise7.02></title>
+    <style>
+        .audio-player,.audio-controls{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 200;
+        }
+        .audio-controls{
+            align-items: center;
+            background-color:blue;
+            border: 3px solid wheat;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 240px;
+            padding: 8px;
+        },.audio-controls .button{
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #070316; 
+            border: 1px seashell;
+            border-radius: 16px;
+            cursor: pointer;
+            outline: none;
+            padding: 4px 16px;
+            text-transform: uppercase;
+        }
+    </style>    
+</head>
+<body>
+    <div id="audio-player" class="audio-player"><audio id="audio-1" src="C:\Users\shiga\OneDrive\Documents\GitHub\shigaganga.github.io\media\track4.mp3" >
+        Your browser does not support the html5<code>audio</code>element.
+        </audio>
+    <div class="audio-controls"><button id="play-btn" class="button">play</button>
+        <button id="pause-btn" class="button">pause</button>
+    <div class=""audio-status"><span id="played">00:00</span>/
+    <span id="duration">00:00</span></div>
+    </div>
+</div>
+</body>
+</html>
