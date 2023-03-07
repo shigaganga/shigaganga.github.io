@@ -8,10 +8,10 @@
     left: 300px;
 }
 .robot-head{
-    background-color:blue;
+    background-color:rgb(55, 58, 125);
     height: 50px;
     width: 50px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,7 @@
     border: black 1px solid;
 }
 .robot-face{
-    background-color: rgb(112, 216, 251);
+    background-color: rgb(138, 152, 230);
     height: 45px;
     width: 45px;
     display: flex;
@@ -46,7 +46,7 @@
     justify-content: center;
     align-items: center;
     border: black 1px solid;
-    border-radius:25% ;
+    border-radius:33% ;
     
 }
 .robot-eyes{
@@ -73,7 +73,7 @@
 
 }
 .robot-body{
-    background-color:rgb(86, 86, 236);
+    background-color:rgb(58, 58, 118);
     position: relative;
     height: 100px;
     border: black 1px solid;
@@ -100,8 +100,8 @@
     left: -10%;
     top:6%;
     transform-origin: top right;
-    transform: rotateZ('15deg');
-    border-radius: 50% 3px 50% 0;
+    transform: rotate(45deg);
+    border-radius: 50%;
     animation: talking infinite alternate 1s;
 }
 .robot-arm-right{
@@ -109,35 +109,52 @@
    right: -10%;
     top:6%;
     transform-origin: top left;
-    transform: rotateZ('15deg');
-    border-radius: 50% 3px 50% 0;
+    transform: rotate(-45deg);
+    border-radius: 50%;
     animation: talking infinite alternate 1s;}
 
 .robot-arm-left, .robot-arm-right{
     position: absolute;
-    background-color: aqua;
+    background-color:rgb(43, 18, 153);
     border: solid black 1px;
-    width: 10%;
-    height: 75%;
+    width: 18%;
+    height: 100%;
     
 }
 
 .robot-hand-left, .robot-hand-right{
     position: absolute;
-    background-color:aqua;
+    background-color:rgb(138, 152, 230);
     border: solid black 1px;
     border-radius: 200px/50px;
     bottom: -10%;
     width:100%;
     height: 10%;
 }
-.robot-finger{
-    background-color:aqua;
-    width:40%;
-    height: 5px;
-    position: absolute;
 
+.robot-leg-left, .robot-leg-right{
+    background-color: rgb(43, 18, 153);
+    border: solid black 1px;
+    width: 18%;
+    height: 50%;}
+.robot-leg-left{
+    position:absolute;
+    top:100%; 
 }
+.robot-leg-right{
+    position:absolute;
+    top:100%;
+    left: 80%;}
+    .robot-shoes{
+        position: absolute;
+        background-color:#fff8dc;
+        border: solid black 1px;
+        border-radius: 200px/50px;
+        bottom: -20%;
+        width:100%;
+        height: 20%;
+    }
+    
 @keyframes talking{
     0%{
         border-radius: 0 0 40% 40%;
