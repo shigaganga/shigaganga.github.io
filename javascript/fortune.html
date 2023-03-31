@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="random()">Click here to see your fortune cookie </button>
+    <script>
+        var fortune=["Look how far you have come.","Little by little one travels far","One bad chapter doesnt mean your story is over","Turn your wounds in to wisdom.", "Not all those who wander are lost. ","The worse enemy to creativity is self-doubt","You are your best thing","Get busy living or get busy dying","You are far more precious than jwels","Mom is a little above queen"]
+
+        //var x=fortune.length;
+// document.write(fortune[x]);
+   function random()
+   {
+    var myIndex=Math.floor(Math.random()*fortune.length);
+    document.write(fortune[myIndex]);
+   }
+
+   </script>
+    
+</body>
+</html>

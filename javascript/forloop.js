@@ -1,0 +1,19 @@
+for(i=1;i<=5;i++){
+    document.write("hello"+"<br>");
+}
+for(i=0;i<=10;i++){
+    document.write(i+"<br>");
+}
+i=1;
+while(i<=5){
+    document.write("kanmani"+"<br>");
+    i++;
+}
+for(i=10;i>=1;i--){
+    document.write(i+"<br>");
+}
+i=1;
+do{
+    document.write("Arush");
+    i++;
+}while(i<=5)

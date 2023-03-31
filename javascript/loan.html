@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan</title>
+    <link rel="stylesheet" href="styleloan.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form>
+        <label for="username">User name:</label>
+        <input type="text" name="username" id="userNameId">
+        <label for="loanamount">Loan amount:</label>
+        <input type="number" name="loanamount" id="loanAmountId">
+        <label for="interest">Interest rate:</label>
+        <input type="number" name="interestrate" id="interestRateId">
+        <label for="payment">Payment amount:</label>
+        <input type="number" name="payment" id="paymentId">
+        <button onclick="balance()">LoanBalance</button>
+    
+    </form>
+  
+        <table style="width:50%" border="1" class="tab">
+        <tr>
+            <th>Payment date</th>
+            <th>Loan amount</th>
+            <th>Payment</th>
+            <th>Interest</th>
+            <th>Loan balance</th>
+        </tr>
+
+        <td id="dateId"> </td>
+        <td id="loanId"></td>
+        <td id="payId"></td>
+        <td id="interestid"></td>
+        <td id="balanceId"></td>
+        
+    </table>
+<script>
+    function balance(){
+        var table=document.getElementsByClassName("tab").value;
+        var date=document.getElementById("dateId").value;
+        var loan=document.getElementById("loanAmountId").value;
+        var payment=document.getElementById("paymentId").value;
+        var interest=document.getElementById("interestRateId").value;
+        var bal=   loan-payment;
+        var interestRate= (bal*interest)/(12*100);
+        var loanBalance=bal+interestRate; 
+        
+        alert(loanBalance);
+        if(loanBalance<payment){
+            document.write("last payment");
+        }else{
+        document.write("pay balance amount next time")
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
