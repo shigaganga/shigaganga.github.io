@@ -1,0 +1,15 @@
+input{
+    display: block;
+    width:50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: center;
+    padding: 10px;
+}

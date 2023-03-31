@@ -1,0 +1,10 @@
+var text="Java script";
+var text1="learn ";
+document.write(text.toUpperCase());
+document.write(text1.concat(text)+"<br>");
+document.write(text.charAt(6)+"<br>");
+document.write(text+"<br>");
+document.write(text[1]+"<br>");
+document.write(text[0]+"<br>");
+document.write(text1.toUpperCase());
+document.write(text.slice(4,9));

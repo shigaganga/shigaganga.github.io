@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h1>form</h1>
+    <form>
+        <label for="firstnameLabel">First name:</label>
+        <input type="text" name="firstname" id="firstName">
+        <label for="lastnamLabele">Last name:</label>
+        <input type="text" name="lastname" id="lastNameId">
+        <button onclick="makeEmail()">make Email</button>
+        
+    </form>
+    <script>
+        function makeEmail(){
+        
+            var firstName=document.getElementById('firstName').value;
+    
+            var lastName=document.getElementById("lastNameId").value;
+
+            var email=firstName.charAt(0)+"."+lastName+"@waketech.edu";
+            alert(email);
+        }
+
+    </script>
+    
+</body>
+</html>
