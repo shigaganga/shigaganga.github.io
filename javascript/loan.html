@@ -5,60 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loan</title>
-    <link rel="stylesheet" href="styleloan.css">
 </head>
 <body>
-    <h1>Form</h1>
-    <form>
-        <label for="username">User name:</label>
-        <input type="text" name="username" id="userNameId">
-        <label for="loanamount">Loan amount:</label>
-        <input type="number" name="loanamount" id="loanAmountId">
-        <label for="interest">Interest rate:</label>
-        <input type="number" name="interestrate" id="interestRateId">
-        <label for="payment">Payment amount:</label>
-        <input type="number" name="payment" id="paymentId">
-        <button onclick="balance()">LoanBalance</button>
-    
-    </form>
-  
-        <table style="width:50%" border="1" class="tab">
-        <tr>
-            <th>Payment date</th>
-            <th>Loan amount</th>
-            <th>Payment</th>
-            <th>Interest</th>
-            <th>Loan balance</th>
-        </tr>
+    <script>
+        var balance=0; var interest=0; var payment=0;
+        balance=prompt("What is your loan balance?","");
+        interest=prompt("current interestrate","");
+        payment=prompt("what do you pay per month?","");
+        document.write("<table>\n<tr>\n<th>payment</th><th>balance</th>\n</tr>");
+            document.write("<tr><td>"+balance+ "</td><td>"+0+" </td></tr>");
+            var count=1;
+            var interestpaid=0;
+            do{
+                if(balance>payment){
+                    balance=balance-payment;
+                }else{
+                    balance=0;
+                }
+                document.write("<tr><td>"+balance+"</td><td>"+count++ +"</td></tr>");
+                if(balance>0){
+                    let interestassured=balance*(interest/12);
+                    if(interestassured>payment){
+                        alert("loan can't be paid off");
+                        break;}
+                        balance+=interestassured;
+                        interestpaid+=interestassured;
+                    }
 
-        <td id="dateId"> </td>
-        <td id="loanId"></td>
-        <td id="payId"></td>
-        <td id="interestid"></td>
-        <td id="balanceId"></td>
-        
-    </table>
-<script>
-    function balance(){
-        var table=document.getElementsByClassName("tab").value;
-        var date=document.getElementById("dateId").value;
-        var loan=document.getElementById("loanAmountId").value;
-        var payment=document.getElementById("paymentId").value;
-        var interest=document.getElementById("interestRateId").value;
-        var bal=   loan-payment;
-        var interestRate= (bal*interest)/(12*100);
-        var loanBalance=bal+interestRate; 
-        
-        alert(loanBalance);
-        if(loanBalance<payment){
-            document.write("last payment");
-        }else{
-        document.write("pay balance amount next time")
-        }
-    }
+                }while(balance>0);
+                    document.write("</table>");
+                    document.write("you made"+(count-1)+"payments,and paid"+interestpaid+"interest");
 
-</script>
-
+            
+    </script>
 
 </body>
 </html>
